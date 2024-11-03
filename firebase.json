@@ -1,0 +1,23 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "portfolio-72d89",
+                    "appId": "1:1093615283192:android:bdccd7b5253bc3370f040d",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "portfolio-72d89",
+                    "configurations": {
+                        "android": "1:1093615283192:android:bdccd7b5253bc3370f040d",
+                        "ios": "1:1093615283192:ios:78c4f12bb5a4c4bf0f040d",
+                        "web": "1:1093615283192:web:25d93fb7ecdcdb390f040d"
+                    }
+                }
+            }
+        }
+    }
+}
