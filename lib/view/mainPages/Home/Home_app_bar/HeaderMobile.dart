@@ -16,6 +16,7 @@ class HeaderMobile extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                 content: Text('Sujith S'),
               ));
+              
             },
             child: const Text('Sujith S',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
