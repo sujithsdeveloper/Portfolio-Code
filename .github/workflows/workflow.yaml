@@ -1,0 +1,35 @@
+name: Host Web
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Checkout repository
+      uses: actions/checkout@v2
+
+      -name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.29.2'
+    
+      -name: install dependencies
+      run: flutter pub get
+
+      -name: Build the web
+      run: flutter build web
+
+    -name: Deploy to GitHub Pages
+    uses: peaceiris/actions-gh-pages@v3
+  with:
+    personal_token: ${{ secrets.PERSONAL_TOKEN }}
+    external_repository: sujithsdeveloper/PortfolioWebApp
+
+    publish_branch: gh-pages
+    publish_dir: ./build/web

@@ -4,13 +4,13 @@ import 'package:webapp/utils/constants/colorConstants.dart';
 import 'package:webapp/utils/CustomWidgets/OnHover.dart';
 
 class AboutMeContainer extends StatelessWidget {
-  const AboutMeContainer({
-    super.key,
-    required this.title,
-    required this.subtitle,
-    required this.date,
-    this.wantTransform = false,
-    this.wantGradient = true});
+  const AboutMeContainer(
+      {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.date,
+      this.wantTransform = false,
+      this.wantGradient = true});
   final String title;
   final String subtitle;
   final String date;
@@ -24,7 +24,7 @@ class AboutMeContainer extends StatelessWidget {
             builder: (isHovered) => Container(
               width: 350,
               decoration: BoxDecoration(
-                color: bgColor,
+                color: Colorconstants.bgColor,
                 border: isHovered ? Border.all(color: Colors.white) : null,
                 borderRadius: BorderRadius.circular(20),
               ),
@@ -59,7 +59,7 @@ class AboutMeContainer extends StatelessWidget {
         : Container(
             width: 350,
             decoration: BoxDecoration(
-              color: bgColor,
+              color: Colorconstants.bgColor,
               border: Border.all(color: Colors.white),
               borderRadius: BorderRadius.circular(20),
             ),

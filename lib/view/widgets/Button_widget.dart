@@ -41,7 +41,7 @@ class ButtonWidget extends StatelessWidget {
                                   Colors.white,
                                   Colors.white,
                                 ])
-                              : gradient),
+                              : Colorconstants.gradient),
                       child: Center(
                           child: Text(
                         label,
@@ -60,8 +60,7 @@ class ButtonWidget extends StatelessWidget {
                     width: width,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(22),
-                        gradient: const LinearGradient(
-                            colors: [Color(0xff814ceb), Color(0xff2d155d)])),
+                        gradient:  Colorconstants.gradient),
                     child: Center(
                         child: Text(
                       label,

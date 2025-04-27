@@ -27,10 +27,10 @@ class Webcontroller with ChangeNotifier {
     notifyListeners();
   }
 
-  void toggleDesktop(bool value) {
-    _isDesktop = value;
-    notifyListeners();
-  }
+  // void toggleDesktop(bool value) {
+  //   _isDesktop = value;
+  //   notifyListeners();
+  // }
 
 
 

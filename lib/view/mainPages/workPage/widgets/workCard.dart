@@ -33,7 +33,7 @@ class WorkCard extends StatelessWidget {
               wantTransform: true,
               builder: (isHovered) => Card(
                 elevation: 5,
-                color: primaryColor,
+                color:Colorconstants. primaryColor,
                 child: InkWell(
                   splashFactory: NoSplash.splashFactory,
                   onTap: () {
@@ -49,7 +49,7 @@ class WorkCard extends StatelessWidget {
                     margin: const EdgeInsets.all(9),
                     width: 250,
                     decoration: BoxDecoration(
-                        color: primaryColor,
+                        color:Colorconstants. primaryColor,
                         borderRadius: BorderRadius.circular(20)),
                     child: Center(
                       child: Column(
@@ -108,7 +108,7 @@ class WorkCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    gradient: gradient),
+                    gradient: Colorconstants.gradient),
                 child: Container(
                   margin: const EdgeInsets.all(9),
                   width: 300,

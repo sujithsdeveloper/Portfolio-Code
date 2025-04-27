@@ -5,7 +5,6 @@ import 'package:webapp/utils/constants/assetsConstants.dart';
 import 'package:webapp/utils/constants/colorConstants.dart';
 import 'package:webapp/view/mainPages/portfolioPage/widgets/mobile/MobileSkillBoxContainer.dart';
 import 'package:webapp/view/mainPages/portfolioPage/widgets/mobile/MobileplatformBoxContainer.dart';
-import 'dart:html' as html;
 
 class Portfoliomobile extends StatelessWidget {
   const Portfoliomobile({super.key});
@@ -108,15 +107,15 @@ class Portfoliomobile extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  const url =
-                      'https://drive.google.com/uc?export=download&id=15Zqz6jFU5ECnKspzXCmYI7McGMZloLV0';
-                  html.window.open(url, "_blank");
+                  // const url =
+                  //     'https://drive.google.com/uc?export=download&id=15Zqz6jFU5ECnKspzXCmYI7McGMZloLV0';
+                  // html.window.open(url, "_blank");
                 },
                 child: Container(
                   margin: const EdgeInsets.all(9),
                   height: 60,
                   decoration: BoxDecoration(
-                    gradient: gradient,
+                    gradient: Colorconstants.gradient,
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: const Row(

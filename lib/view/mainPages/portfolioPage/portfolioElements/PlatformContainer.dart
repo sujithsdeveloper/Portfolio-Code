@@ -34,7 +34,7 @@ class PlatformContainer extends StatelessWidget {
                       Colors.white,
                       Colors.white,
                     ])
-                  : gradient),
+                  : Colorconstants.gradient),
           child: Center(
               child: Row(
             mainAxisSize: MainAxisSize.min,
