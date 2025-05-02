@@ -70,6 +70,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1093615283192',
     projectId: 'portfolio-72d89',
     storageBucket: 'portfolio-72d89.appspot.com',
-    iosBundleId: 'com.example.webapp',
+    iosBundleId: 'com.sujith.portfolio',
   );
 }
